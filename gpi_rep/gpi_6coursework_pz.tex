@@ -1,0 +1,90 @@
+\documentclass[12pt, a4paper, simple]{eskdtext}
+
+\usepackage{hyperref}
+\usepackage{env}
+\usepackage{_sty/gpi_lst}
+\usepackage{_sty/gpi_toc}
+\usepackage{_sty/gpi_t}
+\usepackage{_sty/gpi_p}
+\usepackage{_sty/gpi_u}
+
+% Код
+\ESKDletter{}{К}{Р}
+\def \gpiDocTypeNum {81}
+\def \gpiDocVer {00}
+\def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
+
+\def \gpiDocTopic {ПОЯСНИТЕЛЬНАЯ ЗАПИСКА}
+
+% Графа 1 (наименование изделия/документа)
+\ESKDcolumnI {\ESKDfontII \gpiTopic \\ \gpiDocTopic}
+
+% Графа 2 (обозначение документа)
+\ESKDsignature {\gpiCode}
+
+% Графа 9 (наименование или различительный индекс предприятия) задает команда
+\ESKDcolumnIX {\gpiDepartment}
+
+% Графа 11 (фамилии лиц, подписывающих документ) задают команды
+\ESKDcolumnXIfI {\gpiStudentSurname}
+\ESKDcolumnXIfII {\gpiTeacherSurname}
+\ESKDcolumnXIfV {\gpiTeacherSurname}
+
+\begin{document}
+    \input{_tex/gpi_titlePage_pz.tex}
+
+    % Содержание
+    \tableofcontents
+    \thispagestyle{toc}
+    \pagestyle{toc}
+    \paragraph{ПРИЛОЖЕНИЕ А. НАБОР ТЕСТОВЫХ ЗАДАНИЙ ДЛЯ ПРОВЕРКИ}
+    \paragraph{ПРИЛОЖЕНИЕ Б. РЕЗУЛЬТАТЫ СОЗДАНИЯ, ЗАГРУЗКИ И ПРОВЕРКИ БД}
+    \newpage
+
+    %
+    \newpage
+    \addcontentsline{toc}{section}{ВВЕДЕНИЕ}
+    \section*{ВВЕДЕНИЕ}
+    \newpage
+
+    %
+    \section{ОПИСАНИЕ МОДЕЛИ АВТОМАТИЗАЦИИ}
+    \subsection{Организационная модель}
+    \subsection{Функциональная модель}
+    \subsection{Информационная модель}
+    \subsection{Модель бизнес-процесса объекта автоматизации}
+    \newpage
+
+    %
+    \section{РАЗРАБОТКА БАЗЫ ДАННЫХ}
+    \subsection{Концептуальная модель}
+    \subsection{Логическая модель}
+    \subsection{Физическая модель}
+    \newpage
+
+    %
+    \newpage
+    \addcontentsline{toc}{section}{ЗАКЛЮЧЕНИЕ}
+    \section*{ЗАКЛЮЧЕНИЕ}
+    \newpage
+
+    %
+    \newpage
+    \addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+    \section*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+    \begin{enumerate}
+        \item[1.] ОСНОВЫ VAGRANT > Установка Vagrant на Windows 10 - [Электронный ресурс]
+        Режим доступа: \url{https://www.youtube.com/watch?v=fESCSA-wQEQ}
+        Дата~доступа:~13.02.2022.
+        \item[2.] Установка Apache, PHP, MySQL (LAMP) на VDS сервер (в Ubuntu) - [Электронный ресурс]
+        Режим доступа: \url{https://www.youtube.com/watch?v=FxwPQkP3OGY}
+        Дата~доступа:~15.02.2022.
+    \end{enumerate}
+    \newpage
+
+    %
+    \newpage
+    \addcontentsline{toc}{section}{СПИСОК СОКРАЩЕНИЙ}
+    \section*{СПИСОК СОКРАЩЕНИЙ}
+    \newpage
+\end{document}
