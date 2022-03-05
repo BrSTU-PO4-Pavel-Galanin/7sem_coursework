@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "bash_predeploy": "rm -rfv public && mkdir public && cp ../gpi_rep/_build/*.pdf public",
+    "deploy": "gh-pages -d public"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
