@@ -51,7 +51,155 @@
     \section{ОПИСАНИЕ МОДЕЛИ АВТОМАТИЗАЦИИ}
     \subsection{Организационная модель}
     \subsection{Функциональная модель}
+
+    \newpage
     \subsection{Информационная модель}
+    Информационная модель - модель объекта, представленная в виде информации,
+    описывающей существенные для данного рассмотрения параметры и переменные величины объекта,
+    связи между ними, входы и выходы объекта и позволяющая путём подачи на модель информации об изменениях
+    входных величин моделировать возможные состояния объекта.
+
+    Информационная модель ОА <<Инвентаризация>> для ИС <<Косметический салон>> включает в себя следующие документы:
+    \begin{enumerate}
+        \item[1.] Справочные документы
+        \item[2.] Оперативные документы
+        \item[3.] Отчётные документы
+    \end{enumerate}
+
+    \subsubsection{Справочные документы}
+
+    Справочные документы представлены в <<Каталоге справочных документов>> (рисунок~\ref{fig:docs}).
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/docs.jpg}
+        \caption{Каталог справочных документов}
+        \label{fig:docs}
+    \end{figure}
+
+    Справочник <<Должности сотрудника>> - содержит должности сотрудника.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:cd_DoljnCotr_tipi})
+    и макета (рисунок~\ref{fig:cd_DoljnCotr_maket}).
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[]
+            {_docs/СД_ДолжнСотр_типы.jpg}
+        \caption{Словарь данных справочника <<Должности сотрудника>>}
+        \label{fig:cd_DoljnCotr_tipi}
+    \end{figure}
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[]
+            {_docs/СД_ДолжнСотр_макет.jpg}
+        \caption{Макет справочника <<Должности сотрудника>>}
+        \label{fig:cd_DoljnCotr_maket}
+    \end{figure}
+
+    Справочник <<Единицы хранения>> - содержит единицы хранения материала.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:cd_EdXran_tipi})
+    и макета (рисунок~\ref{fig:cd_EdXran_maket}).
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[]
+            {_docs/СД_ЕдХран_типы.jpg}
+        \caption{Словарь данных справочника <<Единицы хранения>>}
+        \label{fig:cd_EdXran_tipi}
+    \end{figure}
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[]
+            {_docs/СД_ЕдХран_макет.jpg}
+        \caption{Макет справочника <<Единицы хранения>>}
+        \label{fig:cd_EdXran_maket}
+    \end{figure}
+
+    Справочник <<Контрагенты>> - содержит информацию о контрагентах.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:cd_Kontrag_tipi})
+    и макета (рисунок~\ref{fig:cd_Kontrag_maket}).
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[width=16cm]
+            {_docs/СД_Контраг_типы.jpg}
+        \caption{Словарь данных справочника <<Контрагенты>>}
+        \label{fig:cd_Kontrag_tipi}
+    \end{figure}
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[]
+            {_docs/СД_Контраг_макет.jpg}
+        \caption{Макет справочника <<Контрагенты>>}
+        \label{fig:cd_Kontrag_maket}
+    \end{figure}
+
+    Справочник <<Номенклатура>> - содержит информацию о материалах.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:cd_Nomenkl_tipi})
+    и макета (рисунок~\ref{fig:cd_Nomenkl_maket}).
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[width=16cm]
+            {_docs/СД_Номенкл_типы.jpg}
+        \caption{Словарь данных справочника <<Номеклатура>>}
+        \label{fig:cd_Nomenkl_tipi}
+    \end{figure}
+
+    \begin{figure}[p!]
+        \centering
+        \includegraphics[]
+            {_docs/СД_Номенкл_макет.jpg}
+        \caption{Макет справочника <<Номеклатура>>}
+        \label{fig:cd_Nomenkl_maket}
+    \end{figure}
+
+    Справочник <<Производители>> - содержит информацию о производителях.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:cd_Proizv_tipi})
+    и макета (рисунок~\ref{fig:cd_Proizv_maket}).
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=16cm]
+            {_docs/СД_Произв_типы.jpg}
+        \caption{Словарь данных справочника <<Производители>>}
+        \label{fig:cd_Proizv_tipi}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СД_Произв_макет.jpg}
+        \caption{Макет справочника <<Производители>>}
+        \label{fig:cd_Proizv_maket}
+    \end{figure}
+
+    Справочник <<Сотрудники>> - содержит информацию о сотрудниках.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:cd_Sotr_tipi})
+    и макета (рисунок~\ref{fig:cd_Sotr_maket}).
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СД_Сотр_типы.jpg}
+        \caption{Словарь данных справочника <<Сотрудники>>}
+        \label{fig:cd_Sotr_tipi}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СД_Сотр_макет.jpg}
+        \caption{Макет справочника <<Сотрудники>>}
+        \label{fig:cd_Sotr_maket}
+    \end{figure}
+
+    \subsubsection{Оперативные документы}
+    \subsubsection{Отчётные документы}
+
     \subsection{Модель бизнес-процесса объекта автоматизации}
     \newpage
 
