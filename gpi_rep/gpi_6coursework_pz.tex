@@ -66,17 +66,14 @@
     входных величин моделировать возможные состояния объекта.
 
     Информационная модель ОА <<Инвентаризация>> для ИС <<Косметический салон>> включает в себя следующие документы:
-    1)~справочные документы; 2)~оперативные документы; 3)~отчётные документы.
 
-    % \begin{enumerate}
-    %     \item[1.] Справочные документы
-    %     \item[2.] Оперативные документы
-    %     \item[3.] Отчётные документы
-    % \end{enumerate}
+    \begin{enumerate}
+        \item[1.] Справочные документы (рисунок~\ref{fig:CP_}).
+        \item[2.] Оперативные документы (рисунок~\ref{fig:OP_}).
+        \item[3.] Отчётные документы (рисунок~\ref{fig:OT_}).
+    \end{enumerate}
 
-    \subsubsection{Справочные документы}
-
-    Справочные документы представлены в <<Каталоге справочных документов>> (рисунок~\ref{fig:CP_}).
+    % Справочные документы представлены в <<Каталоге справочных документов>> .
 
     \begin{figure}[!h]
         \centering
@@ -86,67 +83,31 @@
         \label{fig:CP_}
     \end{figure}
 
-    Справочник <<Должности сотрудника>> - содержит должности сотрудника.
-    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_DoljnCotr_tipi})
-    и макета (рисунок~\ref{fig:CP_DoljnCotr_maket}).
-
+    % Оперативные документы представлены в <<Каталоге оперативных документов>> .
+    
     \begin{figure}[!h]
         \centering
         \includegraphics[width=14cm]
-            {_docs/СП_ДолжнСотр_типы.jpg}
-        \caption{Словарь данных справочника <<Должности сотрудника>>}
-        \label{fig:CP_DoljnCotr_tipi}
+            {_docs/ОП_.jpg}
+        \caption{Каталог оперативных документов}
+        \label{fig:OP_}
     \end{figure}
 
+    % Отчётные документы представлены в <<Каталоге отчётных документов>> .
+    
     \begin{figure}[!h]
         \centering
-        \includegraphics[]
-            {_docs/СП_ДолжнСотр_макет.jpg}
-        \caption{Макет справочника <<Должности сотрудника>>}
-        \label{fig:CP_DoljnCotr_maket}
+        \includegraphics[width=14cm]
+            {_docs/ОТ_.jpg}
+        \caption{Каталог отчётных документов}
+        \label{fig:OT_}
     \end{figure}
 
     \newpage
 
-    Справочник <<Единицы хранения>> - содержит единицы хранения материала.
-    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_EdXran_tipi})
-    и макета (рисунок~\ref{fig:CP_EdXran_maket}).
+    \subsubsection{Справочные документы}
 
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=14cm]
-            {_docs/СП_ЕдХран_типы.jpg}
-        \caption{Словарь данных справочника <<Единицы хранения>>}
-        \label{fig:CP_EdXran_tipi}
-    \end{figure}
-
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[]
-            {_docs/СП_ЕдХран_макет.jpg}
-        \caption{Макет справочника <<Единицы хранения>>}
-        \label{fig:CP_EdXran_maket}
-    \end{figure}
-
-    Справочник <<Контрагенты>> - содержит информацию о контрагентах.
-    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Kontrag_tipi})
-    и макета (рисунок~\ref{fig:CP_Kontrag_maket}).
-
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=14cm]
-            {_docs/СП_Контраг_типы.jpg}
-        \caption{Словарь данных справочника <<Контрагенты>>}
-        \label{fig:CP_Kontrag_tipi}
-    \end{figure}
-
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[]
-            {_docs/СП_Контраг_макет.jpg}
-        \caption{Макет справочника <<Контрагенты>>}
-        \label{fig:CP_Kontrag_maket}
-    \end{figure}
+    \paragraph{} \textbf{Справочник <<Номенклатура>>}
 
     Справочник <<Номенклатура>> - содержит информацию о материалах.
     Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Nomenkl_tipi})
@@ -168,27 +129,29 @@
         \label{fig:CP_Nomenkl_maket}
     \end{figure}
 
-    \newpage
+    \paragraph{} \textbf{Справочник <<Услуги>>}
 
-    Справочник <<Производители>> - содержит информацию о производителях.
-    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Proizv_tipi})
-    и макета (рисунок~\ref{fig:CP_Proizv_maket}).
+    Справочник <<Услуги>> - содержит перечисление услуг.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Yslygi_tipi})
+    и макета (рисунок~\ref{fig:CP_Yslygi_maket}).
 
     \begin{figure}[!h]
         \centering
         \includegraphics[width=14cm]
-            {_docs/СП_Произв_типы.jpg}
-        \caption{Словарь данных справочника <<Производители>>}
-        \label{fig:CP_Proizv_tipi}
+            {_docs/СП_Услуги_типы.jpg}
+        \caption{Словарь данных справочника <<Услуги>>}
+        \label{fig:CP_Yslygi_tipi}
     \end{figure}
 
     \begin{figure}[!h]
         \centering
         \includegraphics[]
-            {_docs/СП_Произв_макет.jpg}
-        \caption{Макет справочника <<Производители>>}
-        \label{fig:CP_Proizv_maket}
+            {_docs/СП_Услуги_макет.jpg}
+        \caption{Макет справочника <<Услуги>>}
+        \label{fig:CP_Yslygi_maket}
     \end{figure}
+
+    \paragraph{} \textbf{Справочник <<Сотрудники>>}
 
     Справочник <<Сотрудники>> - содержит информацию о сотрудниках.
     Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Sotr_tipi})
@@ -210,19 +173,101 @@
         \label{fig:CP_Sotr_maket}
     \end{figure}
 
-    \subsubsection{Оперативные документы}
+    \newpage
 
-    Оперативные документы представлены в <<Каталоге оперативных документов>> (рисунок~\ref{fig:OP_}).
-    
+    \paragraph{} \textbf{Справочник <<Должности сотрудника>>}
+
+    Справочник <<Должности сотрудника>> - содержит перечисления должностей сотрудника.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_DoljnCotr_tipi})
+    и макета (рисунок~\ref{fig:CP_DoljnCotr_maket}).
+
     \begin{figure}[!h]
         \centering
         \includegraphics[width=14cm]
-            {_docs/ОП_.jpg}
-        \caption{Каталог оперативных документов}
-        \label{fig:OP_}
+            {_docs/СП_ДолжнСотр_типы.jpg}
+        \caption{Словарь данных справочника <<Должности сотрудника>>}
+        \label{fig:CP_DoljnCotr_tipi}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СП_ДолжнСотр_макет.jpg}
+        \caption{Макет справочника <<Должности сотрудника>>}
+        \label{fig:CP_DoljnCotr_maket}
+    \end{figure}
+
+    \paragraph{} \textbf{Справочник <<Единицы хранения>>}
+
+    Справочник <<Единицы хранения>> - содержит перечисление единиц хранения.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_EdXran_tipi})
+    и макета (рисунок~\ref{fig:CP_EdXran_maket}).
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=14cm]
+            {_docs/СП_ЕдХран_типы.jpg}
+        \caption{Словарь данных справочника <<Единицы хранения>>}
+        \label{fig:CP_EdXran_tipi}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СП_ЕдХран_макет.jpg}
+        \caption{Макет справочника <<Единицы хранения>>}
+        \label{fig:CP_EdXran_maket}
+    \end{figure}
+
+    \paragraph{} \textbf{Справочник <<Контрагенты>>}
+
+    Справочник <<Контрагенты>> - содержит информацию о контрагентах.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Kontrag_tipi})
+    и макета (рисунок~\ref{fig:CP_Kontrag_maket}).
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=14cm]
+            {_docs/СП_Контраг_типы.jpg}
+        \caption{Словарь данных справочника <<Контрагенты>>}
+        \label{fig:CP_Kontrag_tipi}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СП_Контраг_макет.jpg}
+        \caption{Макет справочника <<Контрагенты>>}
+        \label{fig:CP_Kontrag_maket}
+    \end{figure}
+
+    \paragraph{} \textbf{Справочник <<Производители>>}
+
+    Справочник <<Производители>> - содержит перечисление производителей.
+    Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Proizv_tipi})
+    и макета (рисунок~\ref{fig:CP_Proizv_maket}).
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=14cm]
+            {_docs/СП_Произв_типы.jpg}
+        \caption{Словарь данных справочника <<Производители>>}
+        \label{fig:CP_Proizv_tipi}
+    \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_docs/СП_Произв_макет.jpg}
+        \caption{Макет справочника <<Производители>>}
+        \label{fig:CP_Proizv_maket}
     \end{figure}
 
     \newpage
+
+    \subsubsection{Оперативные документы}
+
+    \paragraph{} \textbf{Оперативный документ <<Товарно-транспортная накладная>>}
 
     Оперативный документ <<Товарно-транспортная накладная>> - предназначена для учёта
     товарно-материальных ценностей (ТМЦ) при их перемещении с участием транспортных средств
@@ -247,6 +292,7 @@
     \end{figure}
 
     \newpage
+    \paragraph{} \textbf{Оперативный документ <<Приходный ордер>>}
 
     Оперативный документ <<Приходный ордер>> - данным документов оформляется
     поступление наличных денежных средств в кассу предприятия.
@@ -269,8 +315,9 @@
         \label{fig:OP_PrihOrd_maket}
     \end{figure}
 
-
     \newpage
+    \paragraph{} \textbf{Оперативный документ <<Карточка складского учёта>>}
+
     Оперативный документ <<Карточка складского учёта>> - применяется для учёта движения материалов на складе
     и заполняется материально отвественным лицом.
     Документ представлен в виде словаря данных (рисунок~\ref{fig:OP_KartSklYch_tipi})
@@ -291,20 +338,12 @@
         \caption{Макет документа <<Карточка складского учёта>>}
         \label{fig:OP_KartSklYch_maket}
     \end{figure}
+    
+    \newpage
 
     \subsubsection{Отчётные документы}
 
-    Отчётные документы представлены в <<Каталоге отчётных документов>> (рисунок~\ref{fig:OT_}).
-    
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=14cm]
-            {_docs/ОТ_.jpg}
-        \caption{Каталог отчётных документов}
-        \label{fig:OT_}
-    \end{figure}
-
-    \newpage
+    \paragraph{} \textbf{Отчётный документ <<Оборотно-сальдова ведомость товарно материальной ценности на дату>>}
 
     Отчётный документ <<Оборотно-сальдова ведомость товарно материальной ценности на дату>>
     - регистр бухгалтерского учёта, предназначен для контроля операций
@@ -329,6 +368,7 @@
     \end{figure}
 
     \newpage
+    \paragraph{} \textbf{Отчётный документ <<Рейтинг услуг>>}
 
     Отчётный документ <<Рейтинг услуг>>
     - каждую неделю формируется и отражает отсортированные объемы реализации каждой услуги за указанные период.
@@ -352,6 +392,7 @@
     \end{figure}
 
     \newpage
+    \paragraph{} \textbf{Отчётный документ <<Оказание услуги по мастерам>>}
 
     Отчётный документ <<Оказание услуги по мастерам>>
     - каждую неделю формируется и отражает отсортированные объемы оказания услуг по каждому мастеру за указанные период.
@@ -375,6 +416,7 @@
     \end{figure}
 
     \newpage
+    \paragraph{} \textbf{Отчётный документ <<Реализация услуг на дату>>}
 
     Отчётный документ <<Реализация услуг на дату>>
     - документ, в котором хранится информация о всех оказанных услугах за определенный день.
