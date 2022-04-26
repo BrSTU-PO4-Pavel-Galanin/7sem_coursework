@@ -1,7 +1,7 @@
 build:
-	latexmk -pdf -output-directory=_build gpi_6coursework_pz.tex
-	latexmk -pdf -output-directory=_build gpi_6coursework_a.tex
-	latexmk -pdf -output-directory=_build gpi_6coursework_b.tex
+	latexmk -pdf -output-directory=_build 6_курсовая_ПО-4_Галанин_ПЗ.tex
+	latexmk -pdf -output-directory=_build 6_курсовая_ПО-4_Галанин_ПрилА.tex
+	latexmk -pdf -output-directory=_build 6_курсовая_ПО-4_Галанин_ПрилБ.tex
 
 clean:
 	rm -rfv ./*/*.aux
