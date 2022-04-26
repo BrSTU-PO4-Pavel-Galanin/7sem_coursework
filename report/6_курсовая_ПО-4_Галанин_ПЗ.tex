@@ -53,7 +53,7 @@
     \newpage
 
     %
-    \section{ОПИСАНИЕ МОДЕЛИ АВТОМАТИЗАЦИИ}
+    \section{ОПИСАНИЕ МОДЕЛИ ОБЪЕКТА АВТОМАТИЗАЦИИ}
     \subsection{Организационная модель}
 
     Организационная структура - совокупность подразделений организации и их взаимосвязей,
@@ -406,27 +406,94 @@
     \newpage
     \subsection{Модель бизнес-процесса объекта автоматизации}
 
-    Процесс - любая деятельность, в которой используются ресурсы для преобразования входов в выходы.
+    \textbf{Процесс} - любая деятельность, в которой используются ресурсы для преобразования входов в выходы.
     Зачастую представляет из себя совокупность взаимосвязанных и совершенных работ,
     в которых результаты одной работы являются началом другой работы,
     образуя цепочку внутрненних поставщиков и потребителей.
 
-    Бизнес-процесс - устойчивая и целенаправленная совокупность взаимосвязанных видов деятельности,
+    \textbf{Бизнес-процесс} - устойчивая и целенаправленная совокупность взаимосвязанных видов деятельности,
     которая по определённой технологии преобразует входной сигнал в выходной, представляющий ценность для потребителя.
 
-    eEPC - нотация для проектирования бизнес-процессов.
+    \textbf{eEPC} - нотация для проектирования бизнес-процессов.
     Данная нотация ARIS представляет бизнес-процесс как цепочку событий и действий (функций).
     Каждое действие инициализируется и завершается событием.
 
-    Модель бизнесс-процесса ОА <<Инвентаризация>> для ИС <<Косметический салон>> представлена на
-    рисунке~\ref{fig:BusinessModelInvent}~(стр.~\pageref{fig:BusinessModelInvent}).
+    \begin{figure}[!h]
+        \centering
+        \begin{minipage}{0.15\textwidth}
+            \centering
+            \includegraphics[width=0.99\textwidth]
+                {_docs/МБП_Event.png}
+            \caption{Event}
+            \label{fig:MBP_Event}
+        \end{minipage}
+        \begin{minipage}{0.15\textwidth}
+            \centering
+            \includegraphics[width=0.99\textwidth]
+                {_docs/МБП_Activity.png}
+            \caption{Activity}
+            \label{fig:MBP_Activity}
+        \end{minipage}
+        \begin{minipage}{0.15\textwidth}
+            \centering
+            \includegraphics[width=0.99\textwidth]
+                {_docs/МБП_Entity.png}
+            \caption{Entity}
+            \label{fig:MBP_Entity}
+        \end{minipage}
+        \begin{minipage}{0.15\textwidth}
+            \centering
+            \includegraphics[width=0.99\textwidth]
+                {_docs/МБП_Document.png}
+            \caption{Document}
+            \label{fig:MBP_Document}
+        \end{minipage}
+        \begin{minipage}{0.15\textwidth}
+            \centering
+            \includegraphics[width=0.99\textwidth]
+                {_docs/МБП_Location.png}
+            \caption{Location}
+            \label{fig:MBP_Location}
+        \end{minipage}
+        \begin{minipage}{0.15\textwidth}
+            \centering
+            \includegraphics[width=0.99\textwidth]
+                {_docs/МБП_Product.png}
+            \caption{Product}
+            \label{fig:MBP_Product}
+        \end{minipage}
+    \end{figure}
 
-    \begin{figure}[!hp]
+    \textbf{Event} (см. рис.~\ref{fig:MBP_Event}) - состояние, которое является существенным для целей управления бизнесом
+    и оказывает влияние или контролирует дальнейшее развитие одного или более бизнес-процессов.
+    Элемент отображает события, активизирующие функции или порождаемые функциями.
+    Внутри блока помещается наименование события.
+    Событие именуется отглагольным существительным.
+
+    \textbf{Activity} (см. рис.~\ref{fig:MBP_Activity}) - действие или набор действий, выполняемых над исходным объектом с целью получения заданного результата.
+    Внутри блока помещается наименование функции (глагол или отглагольное существительное).
+    Временная последовательность выполнения функций задается расположением функций на диаграмме процесса сверху вниз.
+    Функция именуется глаголом или отглагольным существительным.
+
+    \textbf{Location} (см. рис.~\ref{fig:MBP_Location}) - см. <<Организационная модель ОА>>.
+
+    \textbf{Entity} (см. рис.~\ref{fig:MBP_Entity}) (cущность) - смысловая единица даталогической модели (ER-model, модель «сущность - связь»)
+
+    \textbf{Document} (см. рис.~\ref{fig:MBP_Document}) - бумажный или электронный носитель информации.
+
+    \textbf{Product} (см. рис.~\ref{fig:MBP_Product}) - ресурс или услуга, используемый как для входа в функцию, так и как результат ее выполнения.
+
+    \newpage
+
+    Модель бизнесс-процесса ОА <<Инвентаризация>> для ИС <<Косметический салон>> представлена на
+    рисунке~\ref{fig:MBP}.
+
+    \begin{figure}[!h]
         \centering
         \includegraphics[width=18cm]
-            {_docs/БизнесМодельИнвентаризация.png}
-        \caption{Бизнес модель инвентаризации}
-        \label{fig:BusinessModelInvent}
+            {_docs/МБП.png}
+        \caption{Модель БП ОА «Инвентаризация» для ИС <<Косметический салон>>}
+        \label{fig:MBP}
     \end{figure}
 
     % = = = = = = = = = = = = = = = =
