@@ -27,4 +27,4 @@
 
 1. Переключаемся на `Physical` модель.
 2. `Tools` > `Forward Engineer` > `Schema generation`.
-3. Жмём `Generate...`.
+3. Жмём `Preview...`.
