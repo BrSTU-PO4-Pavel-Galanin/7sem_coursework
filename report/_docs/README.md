@@ -22,3 +22,9 @@
 4. В поле `File name` придумываем имя картинке.
 5. В поле `File type` выбираем расширение файла.
 6. Жмём `Export`.
+
+## Как сгенерировать скрипт в ErWIN
+
+1. Переключаемся на `Physical` модель.
+2. `Tools` > `Forward Engineer` > `Schema generation`.
+3. Жмём `Generate...`.
