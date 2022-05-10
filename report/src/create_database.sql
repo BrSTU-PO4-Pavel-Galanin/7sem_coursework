@@ -52,8 +52,9 @@ ALTER TABLE ОП_ПриказСоздКомИнвент
 
 CREATE TABLE СП_ДолжСотр
 (
-	КодДолжСотр  INTEGER NOT NULL,
-	Наименование  CHAR(120) NOT NULL
+	КодДолжСотр  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NOT NULL,
+	UNIQUE КодДолжСотр (КодДолжСотр)
 )
 ;
 
@@ -67,8 +68,9 @@ ALTER TABLE СП_ДолжСотр
 
 CREATE TABLE СП_ЕдХран
 (
-	КодЕдХран  INTEGER NOT NULL,
-	Наименование  CHAR(120) NOT NULL
+	КодЕдХран  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NOT NULL,
+	UNIQUE КодЕдХран (КодЕдХран)
 )
 ;
 
@@ -82,8 +84,9 @@ ALTER TABLE СП_ЕдХран
 
 CREATE TABLE СП_МестаХран
 (
-	КодМестаХран  INTEGER NOT NULL,
-	Наименование  CHAR(120) NOT NULL
+	КодМестаХран  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NOT NULL,
+	UNIQUE КодМестаХран (КодМестаХран)
 )
 ;
 
@@ -97,8 +100,10 @@ ALTER TABLE СП_МестаХран
 
 CREATE TABLE СП_МоиОрг
 (
-	КодМоейОрг  INTEGER NOT NULL,
-	Наименование  CHAR(120) NOT NULL
+	КодМоейОрг  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NOT NULL,
+	УНП  INTEGER NULL,
+	UNIQUE КодМоейОрг (КодМоейОрг)
 )
 ;
 
@@ -129,8 +134,9 @@ ALTER TABLE СП_Номенкл
 
 CREATE TABLE СП_Произв
 (
-	КодПроизв  INTEGER NOT NULL,
-	Наименование  CHAR(120) NOT NULL
+	КодПроизв  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NOT NULL,
+	UNIQUE КодЕдХран (КодПроизв)
 )
 ;
 
@@ -144,9 +150,10 @@ ALTER TABLE СП_Произв
 
 CREATE TABLE СП_Сотр
 (
+	КодСотр  INTEGER NOT NULL AUTO_INCREMENT,
 	Наименование  CHAR(120) NOT NULL,
-	КодСотр  INTEGER NOT NULL,
-	КодДолжСотр  INTEGER NULL
+	КодДолжСотр  INTEGER NULL,
+	UNIQUE КодСотр (КодСотр)
 )
 ;
 
