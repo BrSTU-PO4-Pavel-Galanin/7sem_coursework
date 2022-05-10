@@ -117,10 +117,12 @@ ALTER TABLE СП_МоиОрг
 
 CREATE TABLE СП_Номенкл
 (
-	КодПроизв  INTEGER NULL,
+	КодНоменкл  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NOT NULL,
 	КодЕдХран  INTEGER NULL,
-	КодНоменкл  INTEGER NOT NULL,
-	Наименование  CHAR(120) NOT NULL
+	КодПроизв  INTEGER NULL,
+	Опис  VARCHAR(4096) NULL,
+	UNIQUE КодНоменкл (КодНоменкл)
 )
 ;
 
