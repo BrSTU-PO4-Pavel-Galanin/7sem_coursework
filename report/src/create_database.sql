@@ -1,8 +1,9 @@
 
 CREATE TABLE КомИнвент
 (
-	КодКомиссии  INTEGER NOT NULL,
-	Наименование  CHAR(120) NULL
+	КодКомиссии  INTEGER NOT NULL AUTO_INCREMENT,
+	Наименование  CHAR(120) NULL,
+	UNIQUE КодКомиссии (КодКомиссии)
 )
 ;
 
@@ -16,11 +17,12 @@ ALTER TABLE КомИнвент
 
 CREATE TABLE ОП_ИнвенОпис
 (
-	КодМестаХран  INTEGER NULL,
-	КодМоейОрг  INTEGER NULL,
-	КодИнвенОпис  INTEGER NOT NULL,
+	КодИнвенОпис  INTEGER NOT NULL AUTO_INCREMENT,
+	Дата  DATE NOT NULL,
 	КодКомиссии  INTEGER NULL,
-	Дата  DATE NOT NULL
+	КодМоейОрг  INTEGER NULL,
+	КодМестаХран  INTEGER NULL,
+	UNIQUE КодИнвенОпис (КодИнвенОпис)
 )
 ;
 
@@ -34,11 +36,12 @@ ALTER TABLE ОП_ИнвенОпис
 
 CREATE TABLE ОП_ПриказСоздКомИнвент
 (
+	КодПриказСоздКомИнвент  INTEGER NOT NULL AUTO_INCREMENT,
+	Дата  DATE NOT NULL,
 	КодМоейОрг  INTEGER NULL,
-	КодМестаХран  INTEGER NULL,
 	КодКомиссии  INTEGER NULL,
-	КодПриказСоздКомИнвент  INTEGER NOT NULL,
-	Дата  DATE NOT NULL
+	КодМестаХран  INTEGER NULL,
+	UNIQUE КодПриказСоздКомИнвент (КодПриказСоздКомИнвент)
 )
 ;
 
@@ -169,14 +172,15 @@ ALTER TABLE СП_Сотр
 
 CREATE TABLE ТабличнаяЧасть_Номенкл
 (
-	КодИнвенОпис  INTEGER NULL,
-	id  INTEGER NOT NULL,
+	id  INTEGER NOT NULL AUTO_INCREMENT,
 	КодНоменкл  INTEGER NULL,
-	Цена  INTEGER NULL,
+	КодИнвенОпис  INTEGER NULL,
+	Цена  DECIMAL(16,2) NULL,
 	ФактичКол  INTEGER NULL,
 	КолПоБухУч  INTEGER NULL,
 	НедостКол  INTEGER NULL,
-	ИзлишкиКол  INTEGER NULL
+	ИзлишкиКол  INTEGER NULL,
+	UNIQUE id (id)
 )
 ;
 
@@ -190,9 +194,10 @@ ALTER TABLE ТабличнаяЧасть_Номенкл
 
 CREATE TABLE ТабличнаяЧасть_СоставКомис
 (
+	id  INTEGER NOT NULL AUTO_INCREMENT,
+	КодКомиссии  INTEGER NULL,
 	КодСотр  INTEGER NULL,
-	id  INTEGER NOT NULL,
-	КодКомиссии  INTEGER NULL
+	UNIQUE id (id)
 )
 ;
 
